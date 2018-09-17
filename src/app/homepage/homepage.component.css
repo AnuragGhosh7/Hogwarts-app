@@ -1,0 +1,29 @@
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  #text-view {
+      padding-left: 20%;
+      padding-top: 15%;
+  }
+    
+    
+    /*.book-img{
+        width: 35vw;
+         height: 40vh;
+    }*/
+    
+    @media screen and (max-width: 1500px){
+        .book-img{
+            width: 83vw;
+            height: 47vh;
+            }   
+    }
+    

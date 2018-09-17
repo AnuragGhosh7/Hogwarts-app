@@ -1,0 +1,31 @@
+
+
+
+<!-- <ul class="list-group " style="text-align:center">
+    
+    <li class="list-group-item">Alias: {{characterData[0].alias}}</li>
+
+    <li class="list-group-item">BloodStatus : {{characterData[0].bloodStatus}}</li>
+
+     
+
+  </ul> -->
+  
+   <!-- <button mat-raised-button color="primary"><a [routerLink] = "['/home-view']">LOGOUT</a></button> -->
+   <ngx-spinner></ngx-spinner>
+   <div style="background-color:blueviolet">
+   <button class="logout" mat-raised-button color="primary" [routerLink] =  "['/home-view']"> LOGOUT </button>
+  
+   
+  <mat-list role="list" *ngIf = "characterData?.length>0" >
+    
+      <mat-list-item role="listitem">NAME: {{characterData[0].name}} </mat-list-item>
+      <mat-list-item role="listitem">HOUSE: {{characterData[0].house}} </mat-list-item>
+      <mat-list-item role="listitem">BLOODSTATUS: {{characterData[0].bloodStatus}}</mat-list-item>
+      <mat-list-item role="listitem">SCHOOL: {{characterData[0].school}} </mat-list-item>
+      <mat-list-item role="listitem">SPECIES: {{characterData[0].species}} </mat-list-item>
+      <mat-list-item role="listitem">SCHOOL: {{characterData[0].bloodStatus}} </mat-list-item>
+    
+    </mat-list>
+
+  </div>

@@ -1,0 +1,105 @@
+<ngx-spinner></ngx-spinner>
+<body>
+<div class="row">
+    <button class="logout" mat-raised-button color="primary" [routerLink]="['/home-view']"> LOGOUT </button>
+</div>
+
+
+<mat-grid-list cols="3">
+
+    <div class="container">
+
+        <div class="row">
+
+            <mat-grid-tile>
+
+
+                <mat-card class="example-card" *ngIf="currentHouse?.length > 0">
+
+                    <img mat-card-image [src]="currentHouse[0].image">
+
+                    <mat-card-actions>
+                        
+                        <a [routerLink]="['/users',currentHouse[0].name]">{{currentHouse[0].name}}</a>
+                    </mat-card-actions>
+                </mat-card>
+
+            </mat-grid-tile>
+
+
+            <mat-grid-tile>
+
+                <mat-card class="example-card" *ngIf="currentHouse?.length > 0">
+
+                    <img mat-card-image [src]="currentHouse[1].image">
+
+                    <mat-card-actions>
+                        <a [routerLink]="['/users',currentHouse[1].name]">{{currentHouse[1].name}}</a>
+                    </mat-card-actions>
+                </mat-card>
+
+            </mat-grid-tile>
+
+
+            <mat-grid-tile>
+
+                <mat-card class="example-card" *ngIf="currentHouse?.length > 0">
+
+                    <img mat-card-image [src]="currentHouse[2].image">
+
+                    <mat-card-actions>
+                        <a [routerLink]="['/users',currentHouse[2].name]">{{currentHouse[2].name}}</a>
+                    </mat-card-actions>
+                </mat-card>
+
+            </mat-grid-tile>
+
+
+
+            <mat-grid-tile>
+
+                <mat-card class="example-card" *ngIf="currentHouse?.length > 0">
+
+                    <img mat-card-image [src]="currentHouse[3].image">
+
+                    <mat-card-actions>
+                        <a [routerLink]="['/users',currentHouse[3].name]">{{currentHouse[3].name}}</a>
+                    </mat-card-actions>
+                </mat-card>
+
+            </mat-grid-tile>
+
+
+            <mat-grid-tile>
+
+                <mat-card class="example-card" *ngIf="currentHouse?.length > 0">
+
+                    <img mat-card-image [src]="currentHouse[4].image">
+
+                    <mat-card-actions>
+                        <a [routerLink]="['/users',currentHouse[4].name]">{{currentHouse[4].name}}</a>
+                    </mat-card-actions>
+                </mat-card>
+
+            </mat-grid-tile>
+
+
+            <mat-grid-tile>
+
+                <mat-card class="example-card" *ngIf="currentHouse?.length > 0">
+
+                    <img mat-card-image [src]="currentHouse[5].image">
+
+                    <mat-card-actions>
+                        <a [routerLink]="['/users',currentHouse[5].name]">{{currentHouse[5].name}}</a>
+                    </mat-card-actions>
+                </mat-card>
+
+            </mat-grid-tile>
+
+        </div>
+    </div>
+</mat-grid-list>
+</body>
+
+
